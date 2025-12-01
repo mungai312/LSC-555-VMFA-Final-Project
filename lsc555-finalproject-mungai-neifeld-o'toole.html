@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<style>
+
+		body	{
+			font-family:Avenir;
+			}
+		h1	{
+			color:DarkSlateGrey;
+			text-align:center;
+			font-size:50px;
+			}
+		div	{
+			
+			}
+		h2	{
+			Color: teal;
+			}
+		p	{
+			margin-left: 20px;
+			margin-right: 20px;
+			}
+		video	{ border:5px solid #555;
+				border-color:Chartreuse;
+			}
+		table	{
+			border-collapse: separate;
+			empty-cells: show;
+			width:100%;
+			}
+		td, th	{
+			border-collapse:collapse;
+			padding:8px;
+			padding-right:15px;
+			}
+			tr:nth-child(odd)	
+					{
+					background-color:rgb(0, 128, 128, 0.25)
+					}
+		th	{
+			padding-top:12px;
+			padding-bottom:12px;
+			text-align:left;
+			background-color:teal;
+			color:white;
+			}
+		.center-table	{
+			margin-left:auto;
+			margin-right:auto;
+				}
+
+		.hanging-indent {
+     				padding-left: 40px;
+      				text-indent: -40px;
+				}
+				
+		.border1	{
+				border:5px solid #555;
+				border-color:Blue;
+				}
+		.border2	{
+				border:7px solid #555;
+				border-color:Orange;
+				}
+
+
+		</style>
+		<title>LSC555 VMFA: Final Project</title>
+		<meta name="keywords" content="Usability, System Analysis, VMFA/>
+		<meta charset="UTF-8"/>
+	</head>
+	<body>
+		<p>Liam O'Toole, Eden Neifeld, and Cristina Mungai<br>LSC555 Final Project<br>Dr. Sang Hoo Oh<br>December 7, 2025</p>
+		<div style="background-image: url('VMFA Logo.jpeg'); background-repeat: no-repeat; background-position: center; padding-top: 75px; padding-bottom: 75px;"><h1> The Virginia Museum of Fine Art </h1></div>
+		
+
+		<h2>Part 1. Description of VMFA and Overview of its Information System</h2>
+<p>The Virginia Museum of Fine Art (VMFA) was founded with the donation of 50 paintings to the State of Virginia by Judge John Barton Payne in 1919. From that small donation it has grown to one of the largest comprehensive art museums in the United States. VMFA's growing encyclopedic collection houses more than 50,000 works of art spanning 6,000 years of world history. It is the only US art museum open 365 days a year with free general admission. Their holdings include the largest collection of Faberge' outside of Russia. <br><br>
+
+VMFA is a state-supported, privately endowed educational institution created for the benefit of the citizens of the Commonwealth of Virginia. Its stated mission is "to collect, preserve, exhibit, and interpret art, to encourage the study of the arts, and thus to enrich the lives of all".</p>
+
+<div>
+
+	<table>
+
+			<tr>
+				<td><Img src="Imperial Peter the Great Egg.jpg" alt="Imperial Peter the Great Easter Egg" style="width:160px;height:210px;"></td>
+				<td><p> For this system analysis, we decided to focus on the VMFA's website from the point of view of a perspective visitor who wants to know more about the museum and is interested in planning a visit to view the collection. A website must be "usable and functional" to attract potential visitors and to maintain the relevance of the physical museum (Kabassi 2016). We will evaluate the system's usability from a new visitor's point of view, guided by Nielsen's Usability Heuristics. Specifically, was there anything confusing, broken, or overwhelming about the website that might make the potential visitor reconsider? We will then assess whether the system adheres to established design guidelines for effective human-computer interaction. Finally, we will evaluate its accessibility for a diverse range of potential visitors.<br><br>
+
+After completing these three levels of analysis, we will outline the areas in which the website performs well, identify problem areas, and provide recommendations for improvement.</p></td>
+				<td><Img src="Tzar Nicholas.jpg" alt="Portrait of Tzar Nicholas" style="width:160px;height:210px;"></td>
+			</tr>
+		</table>
+
+</div>
+<h3><I>Notable Website Features for New Visitors</I></h3>
+
+<p>VMFA's website was recently redesigned with the goal of making it a "more dynamic, meaningful digital experience" and to make the user experience more intuitive and accessible (2025). One of the new features designed specifically with visitors in mind is an updated calendar interface that provides easier access to events and programs. VMFA offers classes that are listed as a subsection of the calendar.
+
+The Plan Your Visit Page includes information such as hours, holiday hours, parking deck hours, restaurant and cafe hours, location and direction information, and special events admission cost. The page also includes information about accessibility, visitor policies, a museum map, and the audio tour. The site has a visitor information section split by demographic, including resources for adults, teens, kids and families, and educators.<br><br> 
+The VMFA homepage begins with a top bar that includes links to <I>become a member, shop, donate, or log in</I>. Below that is a larger navigation row with dropdown menus for the main sections of the site:
+<ul>
+<li>Visit: Plan Your Visit, Group Visits, Accessibility, Dining, Shopping, Expansion & Renovation</li>
+<li>What's On: Exhibitions, Events, Classes, For Adults, For Kids & Families, For Teens, For Educators, For Members</li>
+<li>Explore Art: Explore the Collection, Exhibitions, Research, Educator Resources, Stories</li>
+<li>Get Involved: Membership, Ways to Give, Corporate Support, The Council, Statewide Partners, Visual Arts Fellowship, Volunteer, Careers</li>
+</ul></p>
+<p>Scrolling further down the homepage, visitors see a welcome message with museum hours, followed by sections highlighting <I>Featured Events, the Expansion and Renovation Project, Collection Highlights, Collection Areas, Stories, Getting Here, Become a Member, Get Involved,</I> and the <I>VMFA Shop</I>.<br><br>
+The bottom of the homepage includes a newsletter sign-up, the museum's physical address and hours, and links to <I>About Us, Press Room, Venue Rentals, Contact Us, Careers, Internships, Volunteers</I>, and <I>Visual Arts Fellowships</I>.</p>
+		<h2>Part 2. System Analysis of VMFA Website</h2>
+
+<h3><I>Neilsen's 10 Usability Heuristics Analysis</I></h3>
+<ol>
+	<li><p><u>Visibility of System Status</u> A progress bar or loading bar is not displayed when doing a keyword search on the website. There is also a delay in displaying search results in filtering by a specific artist. Displaying different pages can take a few seconds with no status bar to inform users - however, a loading wheel is displayed when viewing a specific image from the gallery.
+</p></li>
+	<li><p><u>Match Between System and Real World</u> VMFA website speaks the users' language; it is easy to understand and navigate. The top menu labels are: <I>Visit, What's On, Explore Art, and Get Involved</I> (each with dropdown options): these contain clear, precise language for ease of navigation. Action items on the home page (accessible through scrolling) include: <I>Plan your visit, See What's On, Explore, Become a Member, and Start Shopping</I>. These action items anticipate user needs and what users will want to do. Help tips for the website are limited - the website is instead accessible and speaks language of users. There are no clear options for changing the language of the website.
+</p>
+	<li><p><u>User Control and Freedom</u> Drop down menu items provide a "way out" through clicking item a second time (i.e. click "visit" for drop down menu options, click "visit" again to remove them). When navigating to different pages (i.e. exhibitions), users can get out of the page by clicking the VMFA logo link at the top of the page. This disappears when scrolling down and reappears when scrolling back up - first time users likely will find this confusing.</p></li>
+	
+	<li><p><u>Consistency and standards</u> Navigation is consistent and requires minimal user input for finding information about VMFA collection, store, volunteering, classes, etc. These are all accessible at the homepage by scrolling or through top menu navigation. The website demonstrates ease of use and navigation and not many clicks are needed.
+</p></li>
+	<li><p><u>Error Prevention</u> Errors are not usually present through navigation, but typos in a search result are automatically corrected: "Hooper" keyword returns result for "Hopper" with no error message displayed; the typo is assumed.
+There is a specific error that occurs when attempting to cycle through different images of a  paintings in a collection. For example, in the American Galleries there are three images of the Mary Cassatt painting <I>Child Picking Fruit</I> that should be seen when the user clicks on "View 3 images" in the lower right corner of their screen. When the link is clicked the first image is loaded but when the users try to cycle through the images using the arrows on the right, an error message stating in the background behind the image such that it is not legible (See image below). This is a design flaw and error with the website, with no clear fix given. <div style="text-align:Left;"><Img class="border2" src="Child Picking Fruit Error.jpg" alt="Screenshot Error Message"; style="width:375px;height:550px;"></div> <br>  
+ </p></li>
+	<li><p><u>Recognition Rather Than Recall </u> The menu options are displayed in multiple areas of the website - at the top level and through scrolling down on the homepage. Actions are clearly labelled and visible so that the user does not have to remember menu items or the layout of the site to navigate with ease.
+</p></li>
+	<li><p><u>Flexibility and Efficiency of Use</u> Interaction is reduced since most of the website contents are accessible by scrolling on the main page or top menu navigation with drop down lists. The search bar at the top can be used to directly access the work of a specific artist, or an artist's work can be viewed through a keyword search. The website, however, lacks customization abilities.
+</p></li>
+	<li><p><u>Aesthetic and Minimalist Design</u> The text and color are minimalist in design: the background is white with a standard font. The homepage of the website has quite a bit of information, including a very large banner video automatically playing. While scrolling down on the site, the images are animated for each section pulling up; the information is relevant but also can be disorienting.</p></li>
+
+	<div>
+		<video width="520" height="440" controls>
+  		<source src="VMFA Website.mov" type="video/mp4">
+ 		<source src="yourvideo.webm" type="video/webm">
+ 
+		</video>
+	</div>
+
+	
+	
+	<li><p><u>Help Users Recognize, Diagnose, and Recover from Errors </u> An error message is displayed when attempting to enroll in a member course when not signed in: this diagnoses the problem and helps the user navigate to a solution (by signing in as a member or selecting a different option). In another instance, a "500 Internal Service error" displayed when attempting to load a page: a clear message indicating internal error, instructing users to try the action again in a few moments.</p></li>
+	<li><p><u>Help and Documentation</u> There is a lack of self training or a help page. The website also lacks an FAQ for using the  website. Generally, there is no help available for navigation, instead the  navigation is made easy and user friendly to minimize necessity for self training.</p>
+</ol>
+
+<h3><I>Adherence to Design Guidelines</I></h3>
+<ul>
+	<li><u>Response Time</u></li>
+	<li><u>Interaction Efficiency</u></li>
+	<li><u>Text Layout</u></li>
+	<li><u>Colors</u></li>
+	<li><u>Navigation</u></li>
+	<li><u>Multiculturality</u></li>
+	<li><u>Animation and Graphics</u></li>
+	<li><u>Consistency</u></li>
+	<li><u>Establishing trust</u></li>
+</ul>
+<h3><I>Accessibility</I></h3>
+<p>The WAVE accessibility checker gives the VMFA website an 8.7 out of 10 on the AIM score, meaning the site is better than average compared to other websites. According to WAVE, the VMFA website includes 1 instance of an error for missing alternative text to an image, 5 instances of low contrast errors between text and background colors, 4 alerts for redundant links (going to the same webpage), and 1 alert for embedded HTML video. The site is generally accessible with some room for improvement, mainly by providing an alt text for the one image and increasing contrast between text and background colors.</p>
+
+		<h2>Part 3. Critical Analysis and Suggestions for Improvement</h2>
+
+		<h3><I>Literature Review</I></h3>
+		<p>Our review of the literature found that there is no established set of standards for evaluating museum websites. Several researchers have proposed sets of heuristics based on Neilsen's usability heuristics for websites in the cultural heritage environment (Lam 2021, p. 4). The majority of the literature reviewed, found that usability assessment is crucial for museum websites because of the role that they play in promoting user engagement, educating past and future museum visitors, and maintaining relevance for the physical museum. Kabassi notes that in the early days of museum websites, the main concern was that digitization of museum exhibits for the web would have a negative impact on the number of physical visitors to a museum (2017, p. 194). Their review of studies focused on museum mobile and desktop websites revealed that many studies concluded that a good website could actually increase the desire to physically visit the museum. Kabassi emphasized that while there was not one agreed upon method for evaluating a museum website, heuristic evaluation and usability analysis are critical for museum websites to ensure user satisfaction among potential museum visitors. 
+
+
+<h3><I>Critical Analysis of the VMFA Website</I></h3>
+
+<p>In 2014 VMFA launched what was then considered a revolutionary redesign of its website with the goal of providing mobile friendly access on tablets and smartphones and providing users with the ability to explore the museum's permanent collection online. Robin Nicholson, the Deputy Director of Art and Education at VMFA stated, "it's been a longtime goal to have the full breath of our permanent collection accessible online anywhere in the world." At the time of that re-launch only 1,450 of the 3,300 works of art on view in the museum could be viewed on the website. The 2014 website redesign was also undertaken to improve navigation, provide improved access to most-requested information, streamline ticketing, and provide easier access to communication and social media channels. <br><br> Images obtained from the WayBackMachince reveal that prior to the 2014 redesign, the VMFA website appeared as pictured below.<div style="text-align:center;"><p></p><Img class="border1" src="VMFA 2010 Website.jpg" alt="Screenshot of Old VMFA Website"; style="width:750px;height:400px;"></div><div style="text-align:center;"><p style="text-align:left;"> The 2014 redesign updated the look of the website as follows:</p><br> <Img class="border1" src="VMFA 2014 Redesign.jpg" alt="Screenshot of 2014 Website Redesign"; style="width:550px;height:400px;"></div>
+
+<p>Fast-forward to 2025, VMFA unveiled a major website redesign undertaken to make the site more art-forward and provide a more user-friendly experience. In formulating its redesign, VMFA sought input from board members, donors, staff, VMFA members, educators, and the public through a series of listening sessions conducted with design firm Area 17. Like the 2014 redesign, the 2025 project was designed with the goal of inspiring user's curiosity about the collection, providing users with online access to the collection, and providing a seamless, intuitive user experience. </p>
+
+<table>
+
+	<tr>
+		<th>Problem</th>
+		<th>Solution</th>
+	</tr>
+	<tr>
+		<td>moving objects</td>
+		<td>Make static</td>
+	</tr>
+	<tr>
+		<td>k	</td>
+		<td>b </td>
+	</tr>
+</table>
+
+
+ <h3><I>Suggestions for Improvement</I></h3>
+ 
+	<p> Virtual tours are a suggestion. The Met360 Project on YouTube</p>
+
+	<video width="520" height="440" controls>
+  	<source src="TheMet360.mov" type="video/mp4">
+  	<source src="yourvideo.webm" type="video/webm">
+	</video> <br>
+	
+	<p>Google also does a series of virtual tours.  </p>
+
+	
+
+	<video width="520" height="440" controls>
+  	<source src="Google Uffizi VT.mov" type="video/mp4">
+ 	<source src="yourvideo.webm" type="video/webm">
+	</video>
+	
+
+
+		
+ 	
+</video>
+<h2>Conclusion</h2>
+
+<h2>References</h2>
+<p class="hanging-indent">Drivas, I., & Vraimaki, E. (2025). Evaluating and Enhancing Museum Websites: Unlocking Insights for Accessibility, Usability, SEO, and Speed. Metrics, 2(1), 1. <a href="https://doi.org/10.3390/metrics2010001">https://doi.org/10.3390/metrics2010001</a></p>
+
+<p class="hanging-indent">Kabassi, K. (2016). Evaluating Websites of Museums: State of the Art. <I>Journal of Cultural Heritage</I>, 24, 184-916. <a href="http://dx.doi.org/10.1016/j.culher.2016.10.016">http://dx.doi.org/10.1016/j.culher.2016.10.016</a></p>
+
+<p class="hanging-indent">Lam, D., Hoang, T., & Sajjanhar, A. (2021). Identification of Usability Issues of Interactive Technologies in Cultural Heritage through Heuristic Evaluations and Usability Surveys. <I>Multimodal Technologies and Interaction</I>, 5(12), 75. <a href="https://doi.org/10.3390/mti5120075">https://doi.org/10.3390/mti5120075</a></p>
+
+
+
+
+
+
+
+	</body>
+
+</html>
